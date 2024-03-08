@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // "use strict"
+        //let a=34;
+       // let a='this is no';
+        const a=23;
+        console.log(a);
+        // Number
+        // objects
+        // booleans
+        // string
+        // undefined
+        // null
+
+        // function hello(){
+        //     console.log("hey harry");
+        // }
+        // let obja={
+        //     r:34,
+        //     n:78,
+        //     func:function myfun(number){
+        //         console.log("the  number is" +number);
+        //     }
+        // }
+
+        let arr=[34,66,78];
+        console.log(this);
+
+        let mobj={
+            a:this,
+             myfunc :(number)=>{
+                    console.log("The number is" + this);  ///sadha functionsuse kiye to this me window object hi aayega
+             }
+         }
+        mobj.myfunc();
+        console.log(mobj.a);
+
+        document.addEventListener("click",function click(){
+              console.log("clicked");
+            //   alert("hello");
+            let conf=confirm("Are you sure?");
+            console.log(conf);
+        });
+    </script>
+</head>
+<body>
+    I am learning js
+</body>
+</html>
